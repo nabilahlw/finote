@@ -1,0 +1,24 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "finote-db",
+          "appId": "1:1058782957318:android:adaf46d79b1708bd291887",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "finote-db",
+          "configurations": {
+            "android": "1:1058782957318:android:adaf46d79b1708bd291887",
+            "ios": "1:1058782957318:ios:555158d4e6d9663a291887",
+            "macos": "1:1058782957318:ios:555158d4e6d9663a291887",
+            "web": "1:1058782957318:web:b16f83a6f2012af3291887"
+          }
+        }
+      }
+    }
+  }
+}
