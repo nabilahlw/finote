@@ -119,49 +119,19 @@ Buka Android Studio → **Device Manager** → klik **▶ Play** pada emulator.
 ```bash
 flutter run
 ```
-
 ---
 
 ## 🧪 Tutorial Testing
 
 ### A. Testing Manual (UI Testing)
 
-#### 1. Test Sign Up (Daftar Akun Baru)
-
-1. Buka app di emulator
-2. Di halaman login, scroll ke bawah → klik **Sign Up**
-3. Isi form:
-   - **Username**: nama pengguna (contoh: `testuser`)
-   - **Email**: email valid (contoh: `test@gmail.com`)
-   - **Password**: minimal 6 karakter (contoh: `test123`)
-4. Klik tombol **Sign Up**
-5. ✅ Berhasil jika masuk ke halaman Home
-
-#### 2. Test Login
-
-1. Klik **Sign Out** (jika sudah login)
-2. Isi email dan password yang sudah terdaftar
-3. Klik **Login**
-4. ✅ Berhasil jika masuk ke halaman Home dengan nama user
-
-#### 3. Test Tambah Transaksi
-
-1. Di halaman Home, klik tombol **+** (pojok kanan bawah)
-2. Pilih tipe: **Income** atau **Expense**
-3. Isi jumlah, kategori, dan deskripsi
-4. Klik **Simpan**
-5. ✅ Berhasil jika transaksi muncul di Transactions History
-
-#### 4. Test Statistik
-
-1. Klik tab **Statistik** di navigation bar bawah
-2. ✅ Berhasil jika grafik menampilkan data transaksi
-
-#### 5. Test Logout
-
-1. Klik menu/profil
-2. Pilih **Sign Out**
-3. ✅ Berhasil jika kembali ke halaman Login
+| No | Test | Langkah | ✅ Berhasil jika |
+|----|------|---------|----------------|
+| 1 | **Sign Up** | Buka app → scroll ke bawah → klik **Sign Up** → isi Username, Email, Password (min. 6 karakter) → klik **Sign Up** | Masuk ke halaman Home |
+| 2 | **Login** | Sign out → isi email & password terdaftar → klik **Login** | Masuk ke Home dengan nama user |
+| 3 | **Tambah Transaksi** | Klik **+** di pojok kanan bawah → pilih Income/Expense → isi jumlah, kategori, deskripsi → **Simpan** | Transaksi muncul di Transactions History |
+| 4 | **Statistik** | Klik tab **Statistik** di navigation bar | Grafik menampilkan data transaksi |
+| 5 | **Logout** | Klik menu/profil → **Sign Out** | Kembali ke halaman Login |
 
 ### B. Testing Firebase Connection
 
@@ -177,19 +147,6 @@ flutter run
 1. Di Firebase Console → **Authentication** → **Users**
 2. ✅ Akun yang didaftarkan harus muncul di sini
 
----
-
-## 🧪 Tutorial Testing
-
-### A. Testing Manual (UI Testing)
-
-| No | Test | Langkah | ✅ Berhasil jika |
-|----|------|---------|----------------|
-| 1 | **Sign Up** | Buka app → scroll ke bawah → klik **Sign Up** → isi Username, Email, Password (min. 6 karakter) → klik **Sign Up** | Masuk ke halaman Home |
-| 2 | **Login** | Sign out → isi email & password terdaftar → klik **Login** | Masuk ke Home dengan nama user |
-| 3 | **Tambah Transaksi** | Klik **+** di pojok kanan bawah → pilih Income/Expense → isi jumlah, kategori, deskripsi → **Simpan** | Transaksi muncul di Transactions History |
-| 4 | **Statistik** | Klik tab **Statistik** di navigation bar | Grafik menampilkan data transaksi |
-| 5 | **Logout** | Klik menu/profil → **Sign Out** | Kembali ke halaman Login |
 
 ## 📱 Platform yang Didukung
 
